@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Manipulating the DOM</title>
+    <!-- Load Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">
+    <!-- Load Styles -->
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- HTML Follows BEM naming conventions
+  IDs are only used for sections to connect menu achors to sections -->
+  
+  <header class="page__header">
+    
+        <nav class="navbar__menu">
+          <!-- logo of the egyptian football team-->
+          
+          <img src="image/1200px-Egyptian_Football_Association.png"alt="logo" id="headphoto"></img>
+                  <!-- Navigation starts as empty UL that will be populated with JS -->
+                  <button class="hamburger" id="hamburger">
+                    <img src="image/hamburgermenu.png"alt="hamburgermenu" id="hamburgermenuphoto"></img>
+                  </button>
+                  <ul class="navbar__list" id="navbar__list">
+            </ul>
+            
+        </nav>
+        
+    </header>
+    <main>
+      <section id="section1" data-nav="home"class="active">
+        <header>
+            <h1>Egptian National Football Team</h1>
+        </header>
+      </section>
+    <section id="section2" data-nav="Intro">
+        <div class="landing__container">
+            <h2>Intro</h2>
+              <img src="image/19_2021-637718163971183307-118.jpg"alt="logo" id="Introphoto" align="left"></img>
+            <p>
+              The Egypt national football team (Arabic: منتخب مصر لكرة القدم), known colloquially as "the Pharaohs", represents in men's international football, and is governed by the Egyptian Football Association (EFA), the governing body of football in Egypt. The team's historical stadium is Cairo International Stadium, although matches are sometimes played at Borg El Arab Stadium in Alexandria.
+The national football team of Egypt is the most successful team in the Africa Cup of Nations, having won the Tournament a record seven times, including the inaugural edition in 1957. Egypt is also considered one of Africa's powerhouses, being one of three teams in the continent that has reached the top 10.
+In the international stage, Egypt has so far made only three appearances in the World Cup (in 1934, 1990 and 2018). Egypt was the first team outside the Americas and Europe to participate in the World Cup. They also hold the record for the longest gap between two appearances, and the oldest player to have ever played at the World Cup. Egypt is also the only national team that has a perfect winning record against Germany.
+            </p>
+
+        </div>
+    </section>
+        <section id="section3" data-nav="Team Players">
+            <div class="landing__container">
+                <h2>Team Players</h2>
+                <p>
+                  Full squad:
+
+<p>Goalkeepers:
+Mohamed El-Shennawy (Al Ahly SC),
+Mohamed Abo-Gabal (Zamalek SC),
+Mohamed Sobhi (Pharco FC),
+Mahmoud Gad (ENPPI).
+</p>
+<p>Defenders:
+Akram Tawfik,
+Ayman Ashraf (Al Ahly SC),
+Ahmed Fathi, Mohamed Hamdi (Pyramids FC),
+Ahmed Hegazi (Ittihad Jeddah),
+Ahmed Yassien (Bank Al Ahly),
+Mahmoud Alaa,
+Ahmed Fetouh,
+Mahmoud Hamdy El-Wensh (Zamalek SC).
+</p>
+<p>Midfielders:
+Hamdi Fathi,
+Amr El-Sulya,
+Mohamed Magdy Afsha (Al Ahly SC),
+Emam Ashour, Mostafa Fathi (Zamalek SC),
+Mohamed Elneny (Arsenal FC),
+Abdallah El-Said (Pyramids FC).
+</p>
+<p>Forwards:
+Omar Marmoush (VfB Stuttgart),
+Mohamed Sherif (Al Ahly SC),
+Ahmed Yasser Rayan (Altay SK),
+Marwan Hamdi (Smouha SC),
+Mostafa Mohamed (Galatasary SK).
+</p>
+                </p>
+            </div>
+        </section>
+        <section id="section4" data-nav="Team Captain">
+            <div class="landing__container">
+                <h2>Team Captain</h2>
+                  <img src="image/20180906174942667.jpg"alt="logo" id="captainphoto" align="left"></img>
+                <p>
+                    Mohamed Salah Hamed Mahrous Ghaly is the captain of the team
+                    (born June 15, 1992) plays for the English Premier League club Liverpool and the Egypt national team.
+                    England Footballer of the Year 2018, Premier League Player of the Year 2017-18,
+                    African Player of the Year 2017 and 2018, African Player of the Year 2017 and 2018,
+                    BBC African Footballer of the Year 2017 and 2018, Best Premier League Player of the Year 2018,
+                    Premier League Golden Boot Award (Premier League Top Scorer) 2018 and 2019.
+                    He was chosen by the American Time magazine in 2019 among the 100 most influential people in the world.
+                </p>
+                  </div>
+        </section>
+        <section id="section5" data-nav="Honors">
+            <div class="landing__container">
+                <h2>Honors</h2>
+                <p>
+
+                  African competitions
+,,Coppa Africa.svg Africa Cup of Nations
+,,Winners: Gold medal africa.svg 1957, 
+  Gold medal africa.svg 1959, Gold medal africa.svg 1986,
+  Gold medal africa.svg 1998, Gold medal africa.svg 2006,
+  Gold medal africa.svg 2008, Gold medal africa.svg 2010 (Most successful team)
+,,Runners-up: 
+  Silver medal africa.svg 1962,
+  Silver medal africa.svg 2017
+,,Third place:
+  Bronze medal africa.svg 1963,
+  Bronze medal africa.svg 1970,
+  Bronze medal africa.svg 1974
+,,Fourth place: 1976, 1980, 1984
+
+,,,All-Africa Games
+,,,Champions: 
+   1st place,gold medalist(s) 1987,
+   1st place, gold medalist(s) 1995
+,,,Third place:
+   3rd place, bronze medalist(s) 1973
+,,,Afro-Asian Cup of Nations
+,,,Runners-up: 2nd place, silver medalist(s) 1988, 2007
+
+...Arabic competitions
+...Pan Arabic Games
+..Champions: 
+  1st place, gold medalist(s) 1953,
+  1st place, gold medalist(s) 1965,
+  1st place, gold medalist(s) 1992*,
+  1st place, gold medalist(s) 2007 (Most successful team)
+..Runners-up: 2nd place, silver medalist(s) 1961
+
+Arab Cup
+..Champions: 1st place, gold medalist(s) 1992*
+..Third Place: 3rd place, bronze medalist(s) 1988
+
+....palestine Cup of Nations
+...Champions: 1st place, gold medalist(s) 1972, 1st place, gold medalist(s) 1975 (Most successful team)
+
+
+...Other competitions
+...Mediterranean Games
+...Champions: 1st place, gold medalist(s) 1955
+...Silver Medalist: 2nd place, silver medalist(s) 1951
+...Bronze Medalist: 3rd place, bronze medalist(s) 1983
+</p>
+  </div>
+</section>
+    </main>
+    <footer class="page__footer">
+        <p>&copy ahmed Mostafa</p>
+    </footer>
+    <script src="js/app.js" type="application/javascript" defer></script>
+</body>
+
+</html>
